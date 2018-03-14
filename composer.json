@@ -1,0 +1,32 @@
+{
+  "name": "flanny-shop",
+  "description": "Flanny Shop WooCommerce Extension",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Chris Flannagan",
+      "homepage": "https://whoischris.com",
+      "role": "Lead Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "wpackagist-plugin/posts-to-posts": "1.6.5"
+  },
+  "extra": {
+    "installer-paths": {
+      "lib/{$name}/": ["type:wordpress-plugin"]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Flanny_Shop\\": "src/"
+    }
+  }
+}
