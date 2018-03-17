@@ -6,7 +6,7 @@
  * Version: 1.0.0
  * text-domain: flanny-shop
  *
- * @TODO: Hook up bundle display on product and in cart WooCommerce/Cart.php
+ * @TODO: Allow variation selection
  * @TODO: Hook up bundle display on archive and product single WooCommerce/Shop.php
  * @TODO: Hook up replacing bundle with product for proper stock management WooCommerce/Checkout.php
  *

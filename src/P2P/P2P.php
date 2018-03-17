@@ -2,6 +2,8 @@
 
 namespace Flanny_Shop\P2P;
 
+use Flanny_Shop\Post_Types\Product;
+
 class P2P {
 	const PACKAGE_TO_PRODUCT = 'bundle_to_product';
 
@@ -9,8 +11,8 @@ class P2P {
 
 		p2p_register_connection_type( [
 			'name' => self::PACKAGE_TO_PRODUCT,
-			'from' => 'product',
-			'to' => 'product',
+			'from' => Product::NAME,
+			'to' => Product::NAME,
 			'admin_box' => [
 				'show' => 'from',
 			],
