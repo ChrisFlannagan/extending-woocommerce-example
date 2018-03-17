@@ -2,6 +2,9 @@
 
 namespace Flanny_Shop;
 
+use Flanny_Shop\Providers\P2P_Provider;
+use Flanny_Shop\Providers\WooCommerce_Provider;
+
 /**
  * Class Core
  * @package Flanny_Shop
@@ -18,7 +21,8 @@ class Core {
 			return;
 		}
 
-		add_action( 'p2p_init', [ '\\Flanny_Shop\\P2P\\P2P', 'register_connections' ] );
+		$p2p = new P2P_Provider();
+		$woocommerce = new WooCommerce_Provider();
 	}
 
 }
